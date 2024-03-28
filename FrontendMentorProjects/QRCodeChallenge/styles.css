@@ -20,25 +20,22 @@ img {
     border-radius: 10px;
 }
 
-p {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-p.text-1 {
+h1 {
     color: hsl(218, 44%, 22%);
     font-weight: 700;
+    font-size: 15px;
 }
 
-p.text-2 {
+h2 {
     color: hsl(220, 15%, 55%);
     font-weight: 400;
+    font-size: 15px;
 }
 
 .attribution {
     text-align: center;
     width: 90%;
-    max-width: 250px;
+    max-width: 400px;
     margin: 5% auto;
 }
 
