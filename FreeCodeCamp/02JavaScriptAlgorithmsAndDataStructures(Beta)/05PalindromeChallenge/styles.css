@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  text-align: center;
+  background-color:black;
+  flex-direction: column;
+}
+
+hr {
+  border-top: 2px solid red;
+  width: 100%;
+}
+
+.container-big {
+  background-color: rgb(127, 166, 206);
+  margin: auto;
+  margin-bottom: 5%;
+  padding: 0px;
+  width: 100%;
+  border: solid white;
+  font-size: small;
+}
+
+input {
+  width: 45%;
+}
+
+.container-input {
+  background-color: #e3eef7;
+  margin: auto;
+  padding: 1%;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.pal-def {
+  background-color: #e3eef7;
+  margin: auto;
+  padding: 1%;
+  border-radius: 10px;
+  width: 80%;
+}

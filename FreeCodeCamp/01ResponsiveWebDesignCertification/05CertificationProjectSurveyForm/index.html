@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Formulario de Inscripción</h1>
+  <p id="description">Gracias por comunicarse con nostros</p>
+  <form id="survey-form">
+    <label id="name-label">Nombre:</label>
+    <input id="name" type="text" required placeholder="Nombre">
+    <label id="email-label">Correo electrónico:</label>
+    <input id="email" type="email" required placeholder="ejemplo@empresa.cl">
+    <label id="number-label">Edad:</label>
+    <input id="number" type="number" min="1" max="120" required placeholder="Edad">
+    <select id="dropdown">
+      <option value="select">¿Cuál es su animal favorito?</option>
+      <option value="select 2">Perro</option>
+      <option value="select 3">Gato</option>
+    </select>
+    <label>¿Recomendaría nuestro servicio?</label>
+    <input type="radio" name="preferencia" id="Option1" value="Option1">
+      <label for="Option1">Sí</label>
+    <input type="radio" name="preferencia" id="Option2" value="Option2">
+      <label for="Option2">No</label>
+    <input type="checkbox" value="Option1">Deseo recibir más información</input>
+    <input type="checkbox" value="Option2">Comuníquese conmigo</input>
+    <textarea></textarea>
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+</body>
