@@ -16,6 +16,7 @@ body {
 main {
     background-color: hsl(0, 0%, 12%);
     margin: 5% auto;
+    margin-top: 10%;
     max-width: 300px;
     border-radius: 15px;
 }
