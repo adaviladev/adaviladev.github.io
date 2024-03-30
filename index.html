@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="styles.css">
-        <title>Main Site</title>
-    </head>
-    <body>
-        <h1>Links</h1>
-        <h3><a href="FrontendMentorProjects/QRCodeChallenge/index.html">QR Code Challenge</a></h3>
-        <h3><a href="FrontendMentorProjects/SocialLinksPage/index.html">Social Links Challenge</a></h3>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My GitHub Site</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#adaviladev">Adaviladev</a>
+                    <div class="social-center">
+                        <div id="social-test">
+                            <ul class="social">
+                                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="link-background">
+            <h1><a href="#about">About me</a></h1>
+        </div>
+
+        <p class="bio-short">Started my career as a translator, learning languages to speak with people. Now I'm a
+            frontend developer and I learn languages to speak with computers.</p>
+        <hr>
+        <p>I embarked on my professional journey as a translator, immersing myself in the beauty of languages to bridge
+            communication between diverse cultures. Now, I've transitioned into the dynamic world of frontend
+            development, where I harness the power of programming languages to engage in a different form of dialogue –
+            one with machines. Just as I once sought fluency to converse with people, I now master languages to
+            articulate instructions and craft immersive digital experiences. It's a fascinating evolution, where my
+            passion for language continues to guide me, albeit on a new and exciting path.</p>
+        <hr>
+        <div class="link-background">
+            <h1><a href="#challenges">Challenges</a></h1>
+        </div>
+        <p><a href="FrontendMentorProjects/QRCodeChallenge/index.html">QR Code Challenge</a></p>
+        <p><a href="FrontendMentorProjects/SocialLinksPage/index.html">Social Links Challenge</a></p>
+    </main>
+    <footer>
+        <ul class="text-size-selector">
+            <li>
+                <label for="text-size">Select text size:</label>
+                <select id="text-size">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
 </html>

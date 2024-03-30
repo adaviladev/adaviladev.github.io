@@ -1,3 +1,142 @@
 * {
-    text-align: center;
+    color: #EEEEEE;
+}
+
+header {
+    background-color: #393E46;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-decoration: none;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FF204E;
+    font-weight: bold; /*equivalente a 700*/
+}
+
+main {
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 30px;
+    margin-right: 20%;
+    text-align: left;
+    min-height: calc(100vh - 100px);
+}
+
+p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a {
+    position: relative; /* Ensure proper positioning of pseudo-elements */
+    text-decoration: none; /* Remove underline from links by default */
+}
+
+a:not([href='#adaviladev']):before,
+a:not([href='#adaviladev']):after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position the lines */
+    left: 0; /* Align the lines with the left edge of the link */
+    width: 100%; /* Ensure the lines span the entire width of the link */
+    height: 2px; /* Set the height of the lines */
+    background-color: #FF204E; /* Color of the lines */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+a:not([href='#adaviladev']):before {
+    top: -4px; /* Position the line above the text */
+    transform: scaleX(0); /* Initially hide the line */
+}
+
+a:not([href='#adaviladev']):after {
+    bottom: -4px; /* Position the line below the text */
+    transform: scaleX(0); /* Initially hide the line */
+}
+
+a:not([href='#adaviladev']):hover:before,
+a:not([href='#adaviladev']):hover:after {
+    transform: scaleX(1); /* Show the lines on hover */
+}
+
+
+p.bio-short {
+    font-weight: 900;
+}
+
+select {
+    background-color: black;
+}
+
+html {
+    background-color: #222831;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center items vertically */
+}
+
+.social-center {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.social {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social li {
+    margin-left: 10px; /* Adjust spacing between social icons */
+}
+
+.social li:first-child {
+    margin-left: 0; /* Remove left margin for the first social icon */
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #393E46;
+    padding: 5px;
+    z-index: 1000;
+}
+
+
+.text-size-selector {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text-size-selector li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between items */
 }
