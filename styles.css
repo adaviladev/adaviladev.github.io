@@ -1,8 +1,13 @@
+/* Global styles */
 * {
     color: #EEEEEE;
 }
 
+html {
+    background-color: #222831;
+}
 
+/* Header styles */
 header {
     background-color: #393E46;
     padding: 10px 0;
@@ -11,7 +16,6 @@ header {
     top: 0;
     z-index: 1000;
     text-decoration: none;
-    
 }
 
 nav {
@@ -35,6 +39,12 @@ nav {
     font-weight: bold; /*equivalente a 700*/
 }
 
+a {
+    position: relative; /* Ensure proper positioning of pseudo-elements */
+    text-decoration: none; /* Remove underline from links by default */
+}
+
+/* Main content styles */
 main {
     position: absolute;
     margin-top: 65px;
@@ -49,9 +59,17 @@ p {
     margin-top: 20px;
 }
 
-a {
-    position: relative; /* Ensure proper positioning of pseudo-elements */
-    text-decoration: none; /* Remove underline from links by default */
+p.bio-short {
+    font-weight: 900;
+}
+
+select {
+    background-color: black;
+}
+
+/* Link styles */
+a[href='#adaviladev'] {
+    font-size: 24px; /* Adjust the font size as desired */
 }
 
 a:not([href='#adaviladev']):before,
@@ -80,19 +98,18 @@ a:not([href='#adaviladev']):hover:after {
     transform: scaleX(1); /* Show the lines on hover */
 }
 
-
-p.bio-short {
-    font-weight: 900;
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #393E46;
+    padding: 5px;
+    z-index: 1000;
 }
 
-select {
-    background-color: black;
-}
-
-html {
-    background-color: #222831;
-}
-
+/* Social media styles */
 .menu {
     display: flex;
     justify-content: space-between; /* Align items with space between */
@@ -102,6 +119,7 @@ html {
 .social-center {
     display: flex;
     align-items: center; /* Center items vertically */
+    margin-top: 10px;
 }
 
 .social {
@@ -119,18 +137,7 @@ html {
     margin-left: 0; /* Remove left margin for the first social icon */
 }
 
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #393E46;
-    padding: 5px;
-    z-index: 1000;
-}
-
-
+/* Text size selector styles */
 .text-size-selector {
     list-style: none;
     margin: 0;
