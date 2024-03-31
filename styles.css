@@ -36,22 +36,31 @@ nav {
 .menu a {
     text-decoration: none;
     color: #FF204E;
-    font-weight: bold; /*equivalente a 700*/
+    font-weight: bold;
+    /*equivalente a 700*/
 }
 
 a {
-    position: relative; /* Ensure proper positioning of pseudo-elements */
-    text-decoration: none; /* Remove underline from links by default */
+    position: relative;
+    /* Ensure proper positioning of pseudo-elements */
+    text-decoration: none;
+    /* Remove underline from links by default */
 }
 
 /* Main content styles */
 main {
     position: absolute;
     margin-top: 100px;
-    margin-left: 30px;
+    margin-left: 90px;
     margin-right: 20%;
     text-align: left;
     min-height: calc(100vh - 100px);
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: space-around;
+    max-width: 600px;
 }
 
 p {
@@ -61,6 +70,7 @@ p {
 
 p.bio-short {
     font-weight: 900;
+    font-size: 30px;
 }
 
 select {
@@ -69,33 +79,46 @@ select {
 
 /* Link styles */
 a[href='#adaviladev'] {
-    font-size: 24px; /* Adjust the font size as desired */
+    font-size: 24px;
+    /* Adjust the font size as desired */
 }
 
 a:not([href='#adaviladev']):before,
 a:not([href='#adaviladev']):after {
-    content: ''; /* Required for pseudo-elements */
-    position: absolute; /* Position the lines */
-    left: 0; /* Align the lines with the left edge of the link */
-    width: 100%; /* Ensure the lines span the entire width of the link */
-    height: 2px; /* Set the height of the lines */
-    background-color: #FF204E; /* Color of the lines */
-    transition: transform 0.3s ease; /* Add transition for smooth effect */
+    content: '';
+    /* Required for pseudo-elements */
+    position: absolute;
+    /* Position the lines */
+    left: 0;
+    /* Align the lines with the left edge of the link */
+    width: 100%;
+    /* Ensure the lines span the entire width of the link */
+    height: 2px;
+    /* Set the height of the lines */
+    background-color: #FF204E;
+    /* Color of the lines */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth effect */
 }
 
 a:not([href='#adaviladev']):before {
-    top: -4px; /* Position the line above the text */
-    transform: scaleX(0); /* Initially hide the line */
+    top: -4px;
+    /* Position the line above the text */
+    transform: scaleX(0);
+    /* Initially hide the line */
 }
 
 a:not([href='#adaviladev']):after {
-    bottom: -4px; /* Position the line below the text */
-    transform: scaleX(0); /* Initially hide the line */
+    bottom: -4px;
+    /* Position the line below the text */
+    transform: scaleX(0);
+    /* Initially hide the line */
 }
 
 a:not([href='#adaviladev']):hover:before,
 a:not([href='#adaviladev']):hover:after {
-    transform: scaleX(1); /* Show the lines on hover */
+    transform: scaleX(1);
+    /* Show the lines on hover */
 }
 
 /* Footer styles */
@@ -105,20 +128,26 @@ footer {
     left: 0;
     width: 100%;
     background-color: #393E46;
-    padding: 5px;
+    padding-left: 5px;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Social media styles */
 .menu {
     display: flex;
-    justify-content: space-between; /* Align items with space between */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    /* Align items with space between */
+    align-items: center;
+    /* Center items vertically */
 }
 
 .social-center {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
+    /* Center items vertically */
     margin-top: 10px;
 }
 
@@ -130,11 +159,13 @@ footer {
 }
 
 .social li {
-    margin-left: 10px; /* Adjust spacing between social icons */
+    margin-left: 10px;
+    /* Adjust spacing between social icons */
 }
 
 .social li:first-child {
-    margin-left: 0; /* Remove left margin for the first social icon */
+    margin-left: 0;
+    /* Remove left margin for the first social icon */
 }
 
 /* Text size selector styles */
@@ -146,5 +177,16 @@ footer {
 
 .text-size-selector li {
     display: inline-block;
-    margin-right: 20px; /* Adjust spacing between items */
+    margin-right: 20px;
+    /* Adjust spacing between items */
 }
+
+.space {
+    margin-bottom: 50px;
+}
+
+@media screen and (width <= 600px) {
+    main {
+        margin-left: 30px;
+    }
+  }
