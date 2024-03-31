@@ -196,3 +196,23 @@ footer {
         max-width: 98%;
     }
 }
+
+p.bio-short {
+    position: relative;
+}
+
+p.bio-short::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust the position of the line */
+    width: 2px; /* Adjust the width of the line */
+    height: 100%;
+    background-color: transparent; /* Initial color of the line */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+p.bio-short:hover::before {
+    background-color: #FF204E; /* Red color on hover */
+}
+
