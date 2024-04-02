@@ -65,7 +65,7 @@ h1 {
 
 .section-container-hero {
     background-image: url(../images/PSX_20220910_131055.jpg);
-    background-size: cover; /* Cover the entire container */
+    background-size: auto; /* Cover the entire container */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
 }
@@ -82,14 +82,20 @@ h1 {
 .section-container-hero h1,
 .section-container-hero h2,
 .section-container-hero p {
-    margin-left: 30px;
+    text-align: center;
+}
+
+.section-container-hero p {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 60%;
 }
 
 
 .section-container-about {
     color: #ECF0F1;
     background-color: black;
-    height: 600px;
+    height: 630px;
 }
 
 .section-container-about h2 {
@@ -102,6 +108,7 @@ h1 {
 .section-container-about p {
     margin-left: 30px;
     margin-bottom: 20px;
+    max-width: 50%;
 }
 
 .section-container-projects {
