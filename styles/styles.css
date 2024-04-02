@@ -196,4 +196,12 @@ nav li {
     padding-right: 5px;
 }
 
+.section-container-about {
+    height: 900px;
+}
+
+.section-container-about p {
+    max-width: 80%;
+}
+
 }
