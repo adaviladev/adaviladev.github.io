@@ -9,13 +9,16 @@ header {
     background-color: black;
     color: #ECF0F1;
     font-weight: 700;
+    font-size: 20px;
     height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -118,23 +121,35 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjust gap as needed */
-    padding: 0 10px; /* Adjust padding as needed */
+    gap: 20px;
+    /* Adjust gap as needed */
+    padding: 0 10px;
+    /* Adjust padding as needed */
 }
 
 .top {
-    width: 250px; /* Fixed width */
-    height: 250px; /* Fixed height */
-    background-color: #282525; /* Placeholder color */
-    text-align: center; /* Center content */
-    line-height: 250px; /* Vertical centering */
-    font-size: 1.2em; /* Adjust font size as needed */
+    width: 250px;
+    /* Fixed width */
+    height: 250px;
+    /* Fixed height */
+    background-color: #ffffff;
+    /* Placeholder color */
+    text-align: center;
+    /* Center content */
+    line-height: 250px;
+    /* Vertical centering */
+    font-size: 1.2em;
+    /* Adjust font size as needed */
     border: solid black;
-    margin: 10px; /* Adjust margin as needed */
+    margin: 10px;
+    /* Adjust margin as needed */
+    box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
 }
 
 .section-container-projects {
-    background-color: rgb(169, 169, 169);
+    background-color: rgb(255, 255, 255);
     color: #000000;
     padding-top: 60px;
     padding-left: 20px;
@@ -152,10 +167,12 @@ p {
 .section-container-projects h2 {
     font-size: calc(16px + 1vw);
     margin-bottom: calc(20px + 1.5vw);
+    text-align: center;
 }
 
 .section-container-projects p {
     font-size: calc(12px + 1.0vw);
+    text-align: center;
 }
 
 
@@ -188,7 +205,7 @@ form {
     /* Adjust as needed */
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 1px;
     background-color: #f9f9f9;
 }
 
