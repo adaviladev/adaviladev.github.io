@@ -12,7 +12,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 nav ul {
@@ -29,13 +29,15 @@ nav li {
 nav li a {
     text-decoration: none;
     color: #FF204E;
-    padding: 10px 20px;
+    padding: 10px 1vw;
 }
 
 /* Body */
 body {
     background-color: #BDC3C7;
     margin-top: 60px; /* Adjust for header height */
+    margin: 0;
+    padding: 0;
 }
 
 /* Hero Section */
@@ -47,20 +49,30 @@ body {
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     text-align: center;
 }
 
-.section-container-hero h1 {
-    font-size: 3rem;
-    margin: 0;
+.section-container-hero h2, p {
+    margin-bottom: 1.5vw;
 }
 
-.section-container-hero h2,
-.section-container-hero p {
-    margin: 10px 0;
+.section-container-hero h1 {
+    font-size:calc(24px + 1.0vw);
+    margin-top: calc(60px + 5vw);
+    margin-bottom: 1vw;
 }
+
+.section-container-hero h2 {
+    font-size:calc(16px + 1.0vw);
+}
+
+.section-container-hero p {
+    font-size:calc(12px + 1.0vw);
+}
+
+
 
 .section-container-hero p {
     max-width: 80%;
@@ -71,40 +83,73 @@ body {
     color: #ECF0F1;
     background-color: black;
     padding: 20px;
+    height: 100vh;
 }
 
 .section-container-about h2 {
-    font-size: 2rem;
+    font-size:calc(16px + 1vw);
+    margin-bottom: calc(20px + 1.5vw);
+    width: 100%;
 }
 
 .section-container-about p {
-    max-width: 100%;
+    display: block;
+    font-size:calc(16px + 0.3vw);
+    width: calc(190px + 30vw);
     margin: 10px 0;
 }
 
 /* Projects Section */
 .section-container-projects {
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.section-container-projects h2,
+.section-container-projects p {
+    margin: 10px 0;
+}
+
+.section-container-projects h2 {
+    font-size:calc(16px + 1.0vw);
+}
+
+.section-container-projects p {
+    font-size:calc(12px + 1.0vw);
 }
 
 .top-projects {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 10px, 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    grid-auto-rows: minmax(300px, auto);
+    grid-gap: 10px;
+    justify-content: center;
 }
 
 .top-1, .top-2, .top-3 {
     border: solid black;
-    width: 150px;
-    height: 150px;
-    padding: 1px;
 }
 
 /* Contact Section */
 .section-container-contact {
-    background-color: white; /* Change color as needed */
+    background-color: rgb(220, 220, 220); /* Change color as needed */
+    height: 90vh;
     padding: 20px;
+    margin-bottom: 60px;
+}
+
+.section-container-contact h2 {
+    text-align: center;
+    font-size:calc(16px + 1vw);
+    margin-bottom: calc(20px + 1.5vw);
 }
 
 /* Footer */
