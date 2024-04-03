@@ -12,7 +12,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 nav ul {
@@ -40,18 +40,22 @@ body {
     padding: 0;
 }
 
+.big-container {
+    right: 0;
+}
+
 /* Hero Section */
 .section-container-hero {
     background-image: url(../images/PSX_20220910_131055.jpg);
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-
     align-items: center;
     text-align: center;
+
 }
 
 .section-container-hero h2, p {
@@ -82,27 +86,32 @@ body {
 .section-container-about {
     color: #ECF0F1;
     background-color: black;
-    padding: 20px;
-    height: 100vh;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
 }
 
 .section-container-about h2 {
     font-size:calc(16px + 1vw);
     margin-bottom: calc(20px + 1.5vw);
-    width: 100%;
 }
 
 .section-container-about p {
     display: block;
     font-size:calc(16px + 0.3vw);
-    width: calc(190px + 30vw);
+    width: calc(190px + 10vw);
     margin: 10px 0;
 }
 
 /* Projects Section */
 .section-container-projects {
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     justify-content: center;
     align-items: center;
     height: fit-content;
@@ -128,10 +137,11 @@ body {
     flex-wrap: wrap;
     margin: 10px, 10px; */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
-    grid-auto-rows: minmax(300px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    grid-auto-rows: minmax(250px, 250px);
     grid-gap: 10px;
     justify-content: center;
+    height: fit-content;
 }
 
 .top-1, .top-2, .top-3 {
@@ -142,7 +152,10 @@ body {
 .section-container-contact {
     background-color: rgb(220, 220, 220); /* Change color as needed */
     height: 90vh;
-    padding: 20px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     margin-bottom: 60px;
 }
 
