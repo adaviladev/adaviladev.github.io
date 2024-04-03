@@ -50,7 +50,9 @@ body {
     padding: 0;
 }
 
-
+a:hover {
+    color: white;
+}
 
 /* Hero Section */
 .section-container-hero {
