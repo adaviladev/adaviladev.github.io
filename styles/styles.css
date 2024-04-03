@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Header */
 header {
     background-color: black;
@@ -35,22 +41,22 @@ nav li a {
 /* Body */
 body {
     background-color: #BDC3C7;
-    margin-top: 60px; /* Adjust for header height */
+    margin-top: 60px;
+    /* Adjust for header height */
     margin: 0;
     padding: 0;
 }
 
-.big-container {
-    right: 0;
-}
+
 
 /* Hero Section */
 .section-container-hero {
     background-image: url(../images/PSX_20220910_131055.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+    /* Full viewport height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,22 +64,23 @@ body {
 
 }
 
-.section-container-hero h2, p {
+.section-container-hero h2,
+p {
     margin-bottom: 1.5vw;
 }
 
 .section-container-hero h1 {
-    font-size:calc(24px + 1.0vw);
+    font-size: calc(24px + 1.0vw);
     margin-top: calc(60px + 5vw);
     margin-bottom: 1vw;
 }
 
 .section-container-hero h2 {
-    font-size:calc(16px + 1.0vw);
+    font-size: calc(16px + 1.0vw);
 }
 
 .section-container-hero p {
-    font-size:calc(12px + 1.0vw);
+    font-size: calc(12px + 1.0vw);
 }
 
 
@@ -94,27 +101,47 @@ body {
 }
 
 .section-container-about h2 {
-    font-size:calc(16px + 1vw);
+    font-size: calc(16px + 1vw);
     margin-bottom: calc(20px + 1.5vw);
 }
 
 .section-container-about p {
     display: block;
-    font-size:calc(16px + 0.3vw);
-    width: calc(190px + 10vw);
+    font-size: calc(16px + 0.3vw);
+    width: calc(60% + 10vw);
     margin: 10px 0;
 }
 
 /* Projects Section */
+
+.top-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust gap as needed */
+    padding: 0 10px; /* Adjust padding as needed */
+}
+
+.top {
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    background-color: #282525; /* Placeholder color */
+    text-align: center; /* Center content */
+    line-height: 250px; /* Vertical centering */
+    font-size: 1.2em; /* Adjust font size as needed */
+    border: solid black;
+    margin: 10px; /* Adjust margin as needed */
+}
+
 .section-container-projects {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(169, 169, 169);
+    color: #000000;
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    justify-content: center;
-    align-items: center;
     height: fit-content;
+    min-height: 100vh;
 }
 
 .section-container-projects h2,
@@ -123,47 +150,73 @@ body {
 }
 
 .section-container-projects h2 {
-    font-size:calc(16px + 1.0vw);
+    font-size: calc(16px + 1vw);
+    margin-bottom: calc(20px + 1.5vw);
 }
 
 .section-container-projects p {
-    font-size:calc(12px + 1.0vw);
+    font-size: calc(12px + 1.0vw);
 }
 
-.top-projects {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 10px, 10px; */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
-    grid-auto-rows: minmax(250px, 250px);
-    grid-gap: 10px;
-    justify-content: center;
-    height: fit-content;
-}
-
-.top-1, .top-2, .top-3 {
-    border: solid black;
-}
 
 /* Contact Section */
 .section-container-contact {
-    background-color: rgb(220, 220, 220); /* Change color as needed */
+    background-color: rgb(220, 220, 220);
+    /* Change color as needed */
     height: 90vh;
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-container-contact h2 {
     text-align: center;
-    font-size:calc(16px + 1vw);
+    font-size: calc(16px + 1vw);
     margin-bottom: calc(20px + 1.5vw);
 }
+
+/* Style for the form */
+form {
+    width: 80vw;
+    max-width: 600px;
+    /* Adjust as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Style for submit button */
+button[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF204E;
+}
+
+
 
 /* Footer */
 footer {
