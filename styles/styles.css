@@ -5,6 +5,7 @@
 }
 
 /* Header */
+
 header {
     background-color: black;
     color: #ECF0F1;
@@ -50,6 +51,11 @@ body {
     padding: 0;
 }
 
+a {
+    transition: color .1s;
+}
+
+
 a:hover {
     color: white;
 }
@@ -94,9 +100,10 @@ p {
     max-width: 80%;
 }
 
+
 /* About Section */
 .section-container-about {
-    color: #ECF0F1;
+    color: white;
     background-color: black;
     padding-top: 60px;
     padding-left: 20px;
