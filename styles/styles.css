@@ -38,7 +38,7 @@ nav li {
 
 nav li a {
     text-decoration: none;
-    color: #FF204E;
+    color: darkgray;
     padding: 10px 1vw;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 a {
-    transition: color .1s;
+    transition: color .3s;
 }
 
 
