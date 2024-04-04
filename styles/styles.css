@@ -82,7 +82,7 @@ p {
 
 .section-container-hero h1 {
     font-size: calc(24px + 1.0vw);
-    margin-top: calc(60px + 5vw);
+    margin-top: calc(55px + 5vw);
     margin-bottom: 1vw;
 }
 
@@ -93,7 +93,6 @@ p {
 .section-container-hero p {
     font-size: calc(12px + 1.0vw);
 }
-
 
 
 .section-container-hero p {
@@ -118,10 +117,18 @@ p {
 }
 
 .section-container-about p {
+    transition: color 0.5s ease-in-out;
+}
+.section-container-about p:hover {
+    color:white
+}
+
+.section-container-about p {
     display: block;
     font-size: calc(16px + 0.3vw);
     width: calc(60% + 10vw);
     margin: 10px 0;
+    color: darkgray
 }
 
 /* Projects Section */
