@@ -92,6 +92,7 @@ p {
 
 .section-container-hero p {
     font-size: calc(12px + 1.0vw);
+    color: rgb(63, 63, 63);
 }
 
 
