@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Young Serif;
+    src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-size: 16px;
+}
+
+.content-container {
+    width: 70vw;
+    margin: 10% auto;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 5%;
+}
+
+.prep-time-container {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.prep-time-container ul {
+    padding: 2% 0 5%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: calc(6px + 1vw);
+    padding: 1% 0;
+}
+
+h1, h2 {
+    font-family: "Young Serif";
+}
+
+h1 {
+    font-size: calc(12px + 2vw);
+    font-weight: normal;
+}
+
+h2 {
+    font-size: calc(8px + 2vw);
+    font-weight: normal;
+    color: hsl(14, 45%, 36%);
+}
+
+p, h3, li {
+    font-family: Outfit;
+    color: hsl(30, 10%, 34%);
+}
+
+h3 {
+    margin: 0;
+    font-size: calc(8px + 1vw);
+    font-weight: bold;
+    color: hsl(332, 51%, 32%);
+}
+
+hr {
+    color: lightgray;
+}
+
+ul, ol {
+    padding: 20px;
+}
+
+ul, ol, ul li::marker, ol li::marker {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+
+li {
+    font-size: calc(6px + 1vw);
+    margin-bottom: 1vh;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+table {
+    width: 90%;
+    text-align: left;
+}
