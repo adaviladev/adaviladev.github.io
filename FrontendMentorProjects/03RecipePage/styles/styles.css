@@ -34,11 +34,12 @@ body {
     background-color: hsl(330, 100%, 98%);
     border-radius: 10px;
     margin: 0 auto;
-    padding: 5%;
+    padding-top: 2vw;
+    padding-left: 2vw;
+
 }
 
 .prep-time-container ul {
-    padding: 2% 0 5%;
 }
 
 img {
@@ -50,7 +51,7 @@ img {
 
 p {
     font-size: calc(6px + 1vw);
-    padding: 1% 0;
+    padding: 1vh 0;
 }
 
 h1, h2 {
@@ -60,12 +61,14 @@ h1, h2 {
 h1 {
     font-size: calc(12px + 2vw);
     font-weight: normal;
+    margin-top: 2vh;
 }
 
 h2 {
     font-size: calc(8px + 2vw);
     font-weight: normal;
     color: hsl(14, 45%, 36%);
+    margin-top: 2vh;
 }
 
 p, h3, li {
@@ -85,7 +88,7 @@ hr {
 }
 
 ul, ol {
-    padding: 20px;
+    padding: 15px;
 }
 
 ul, ol, ul li::marker, ol li::marker {
@@ -96,6 +99,7 @@ ul, ol, ul li::marker, ol li::marker {
 li {
     font-size: calc(6px + 1vw);
     margin-bottom: 1vh;
+    margin-left: 1vw;
 }
 
 ul li {
