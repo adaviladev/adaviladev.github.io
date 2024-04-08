@@ -186,3 +186,4 @@ const sortInputArray = (event) => {
   
     updateUI(inputValues);
   }
+
