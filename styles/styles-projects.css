@@ -69,3 +69,9 @@ body {
     background-color: #070F2B;
     color: #b2b7d4;
 }
+
+.project-cards-container {
+    margin: auto;
+    display: grid;
+    gap: 50px;
+}
