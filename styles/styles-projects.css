@@ -1,0 +1,71 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: #ECF0F1;
+    font-weight: 700;
+    font-size: 20px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    text-decoration: none;
+    color: darkgray;
+    padding: 10px 1vw;
+}
+
+a {
+    transition: color .3s;
+}
+
+/* Links */
+a:hover {
+    color: white;
+}
+
+body {
+    background-color: #070F2B;
+}
+
+/* Main Content*/
+.center-text {
+    margin-top: 20vh;
+    margin-left: 10vw;
+    margin-right: 10vw;;
+    padding: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #070F2B;
+    color: #b2b7d4;
+}
