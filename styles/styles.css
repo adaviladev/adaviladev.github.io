@@ -142,6 +142,7 @@ p {
     /* Adjust gap as needed */
     padding: 0 10px;
     /* Adjust padding as needed */
+    
 }
 
 .top {
@@ -163,6 +164,7 @@ p {
     box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 10px 19px 10px rgba(0,0,0,0.75);
+    border-radius: 0 40px 0 40px;
 }
 
 .section-container-projects {
@@ -178,6 +180,7 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+;
 
 }
 
