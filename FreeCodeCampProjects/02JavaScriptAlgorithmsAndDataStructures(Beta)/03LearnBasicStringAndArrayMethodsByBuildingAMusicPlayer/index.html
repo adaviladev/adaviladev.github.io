@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Linking Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
@@ -12,53 +11,39 @@
       href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <!-- Linking external CSS file -->
     <link rel="stylesheet" href="styles.css" />
-    <!-- Setting the title of the page -->
     <title>
       Learn Basic String and Array Methods by Building a Music Player App
     </title>
   </head>
 
   <body>
-    <!-- Main container -->
     <div class="container">
-      <!-- Music player section -->
       <div class="player">
-        <!-- Player bar -->
         <div class="player-bar">
-          <!-- Decorative lines -->
           <div class="parallel-lines">
             <div></div>
             <div></div>
           </div>
-          <!-- Title of the music player -->
           <h1 class="fcc-title">freeCodeCamp</h1>
-          <!-- Decorative lines -->
           <div class="parallel-lines">
             <div></div>
             <div></div>
           </div>
         </div>
-        <!-- Player content -->
         <div class="player-content">
-          <!-- Album art of the player -->
           <div id="player-album-art">
             <img
               src="https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/quincy-larson-album-art.jpg"
               alt="song cover art"
             />
           </div>
-          <!-- Display section of the player -->
           <div class="player-display">
-            <!-- Song and artist information -->
             <div class="player-display-song-artist">
               <p id="player-song-title"></p>
               <p id="player-song-artist"></p>
             </div>
-            <!-- Player control buttons -->
             <div class="player-buttons">
-              <!-- Previous button with SVG icon -->
               <button id="previous" class="previous" aria-label="Previous">
                 <svg
                   width="24"
@@ -71,7 +56,6 @@
                     height="18.5453"
                     transform="matrix(-1 0 0 1 4.63633 0)"/></svg>
               </button>
-              <!-- Play button with SVG icon -->
               <button id="play" class="play" aria-label="Play">
                 <svg
                   width="17"
@@ -81,7 +65,6 @@
                   xmlns="http://www.w3.org/2000/svg"
                 > <path d="M0 0L16.1852 9.5L1.88952e-07 19L0 0Z" /></svg>
               </button>
-              <!-- Pause button with SVG icon -->
               <button id="pause" class="pause" aria-label="Pause">
                 <svg
                   width="17"
@@ -91,7 +74,6 @@
                   xmlns="http://www.w3.org/2000/svg"
                 ><path d="M0 6.54013e-07H4.75V19H0V6.54013e-07Z" /> <path d="M11.4 0H16.15V19H11.4V0Z" /></svg>
               </button>
-              <!-- Next button with SVG icon -->
               <button id="next" class="next" aria-label="Next">
                 <svg
                   width="24"
@@ -101,7 +83,6 @@
                   xmlns="http://www.w3.org/2000/svg"
                 ><path d="M0 0L16.1852 9.5L1.88952e-07 19L0 0Z" /> <rect x="18.5885" width="4.63633" height="18.5453" /></svg>
               </button>
-              <!-- Shuffle button with SVG icon -->
               <button id="shuffle" class="shuffle" aria-label="Shuffle">
                 <svg
                   width="17"
@@ -119,24 +100,18 @@
           </div>
         </div>
       </div>
-      <!-- Playlist section -->
       <div class="playlist">
-        <!-- Playlist bar -->
         <div class="playlist-bar">
-          <!-- Decorative lines -->
           <div class="parallel-lines">
             <div></div>
             <div></div>
           </div>
-          <!-- Title of the playlist -->
           <h2 class="playlist-title" id="playlist">Playlist</h2>
-          <!-- Decorative lines -->
           <div class="parallel-lines">
             <div></div>
             <div></div>
           </div>
         </div>
-         <!-- Playlist songs list -->
         <ul id="playlist-songs"></ul>
       </div>
     </div>
