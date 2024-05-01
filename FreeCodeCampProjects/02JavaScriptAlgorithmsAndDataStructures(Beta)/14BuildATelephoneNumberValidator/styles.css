@@ -1,0 +1,75 @@
+html {
+    background-color: #060047;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the body covers the entire viewport height */
+    margin: 0; /* Remove default margin */
+    text-align: center;
+}
+
+h1 {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: auto;
+}
+
+h2 {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.title-container {
+    width: 90%; /* Adjust width as needed */
+    max-width: 250px; /* Set maximum width */
+    height: auto; /* Automatically adjust height */
+    background-color: #B3005E;
+    color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 1%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%; /* Adjust width as needed */
+    max-width: 250px; /* Set maximum width */
+    height: 460px; /* Automatically adjust height */
+    max-height: 90vh; /* Set maximum height as 90% of viewport height */
+    background-color: #B3005E;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 1%
+}
+
+
+#subtitle {
+    margin-bottom: 30px;
+}
+
+#user-input {
+    margin-bottom: 320px;
+}
+
+#results-div {
+    background-color: #E90064;
+    color: #ffffff;
+    position: fixed;
+    bottom: 380px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1%;
+}
