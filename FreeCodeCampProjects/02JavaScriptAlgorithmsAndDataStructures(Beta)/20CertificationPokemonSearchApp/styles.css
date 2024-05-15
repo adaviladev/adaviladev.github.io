@@ -1,0 +1,9 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.base-stats {
+    display: flex;
+    flex-direction: column;
+}
