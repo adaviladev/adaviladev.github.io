@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+            box-shadow: 0px 0px 10px 0px #ccc;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            margin-top: 20px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .form-container input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: 0;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Mi Página Personal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#biografia">Biografía</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="biografia">
+        <div class="container">
+            <h2>Biografía</h2>
+            <p>Hola, soy un traductor profesional con experiencia en inglés, portugués, japonés y español. Además, soy desarrollador web en formación y apasionado por la música, especialmente la guitarra eléctrica.</p>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div class="container">
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li>Empresa A - Traductor (2015-2020)</li>
+                <li>Empresa B - Traductor (2020-2023)</li>
+                <li>Freelance - Traductor y Desarrollador Web (2023-presente)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <ul>
+                <li>Proyecto 1: Descripción del proyecto.</li>
+                <li>Proyecto 2: Descripción del proyecto.</li>
+                <li>Proyecto 3: Descripción del proyecto.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <div class="container">
+            <h2>Clientes</h2>
+            <p>He trabajado con una variedad de clientes, incluyendo:</p>
+            <ul>
+                <li>Cliente A</li>
+                <li>Cliente B</li>
+                <li>Cliente C</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2>Servicios</h2>
+            <p>Ofrezco los siguientes servicios:</p>
+            <ul>
+                <li>Traducción de documentos</li>
+                <li>Desarrollo web</li>
+                <li>Consultoría en traducción y localización</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="form-container">
+                <form action="https://example.com/form-handler" method="post">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Conéctate conmigo en redes sociales:</p>
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://www.github.com">GitHub</a></li>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
